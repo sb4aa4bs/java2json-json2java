@@ -8,6 +8,10 @@ public class Checkout {
 	public void setCart(Cart myCart) {
 		this.cart = myCart;
 	}
+	@Override
+	public String toString() {
+		return "Checkout [cart=" + cart + ", cust=" + cust + "]";
+	}
 	public Customers getCust() {
 		return cust;
 	}

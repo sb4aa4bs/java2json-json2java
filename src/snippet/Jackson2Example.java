@@ -33,6 +33,8 @@ public class Jackson2Example {
 			// Convert object to JSON string and pretty print
 			jsonInString = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(checkout);
 			System.out.println(jsonInString);
+			
+			System.out.println(checkout.toString());
 
 		} catch (JsonGenerationException e) {
 			e.printStackTrace();
@@ -48,11 +50,17 @@ public class Jackson2Example {
 		Checkout checkout = new Checkout();
 		Cart cart = new Cart();
 		cart.setId("1234");
-		Items item1 = new Items();
-		item1.setId("4321");
-		item1.setPrice("150");
-		item1.setPrice("10%");
-		cart.setItems(item1);
+		Items item[] = new Items[2];
+		for(int i=0;i<item.length;i++){
+			item[i] = new Items();
+			item[i].setId("4321");
+			item[i].setPrice("150");
+			item[i].setPrice("10%");
+		}
+		/*item[1].setId("4321");
+		item[1].setPrice("150");
+		item[1].setPrice("10%");*/
+		cart.setItems(item);
 		cart.setTotal("150");
 		Customers customer = new Customers();
 		customer.setEmail("bharath.softy@gmail.com");

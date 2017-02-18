@@ -2,7 +2,7 @@ package snippet;
 
 public class Cart {
 	String id;
-	Items items;
+	Items items[] = new Items[2];
 	String total;
 	public String getId() {
 		return id;
@@ -10,10 +10,10 @@ public class Cart {
 	public void setId(String id) {
 		this.id = id;
 	}
-	public Items getItems() {
+	public Items[] getItems() {
 		return items;
 	}
-	public void setItems(Items items) {
+	public void setItems(Items[] items) {
 		this.items = items;
 	}
 	public String getTotal() {

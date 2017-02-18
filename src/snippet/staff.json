@@ -1,1 +1,1 @@
-{"cart":{"id":"1234","items":{"id":"4321","price":"10%","tax":null},"total":"150"},"cust":{"lastname":"Kandaswamy","firstname":"Bharath","email":"bharath.softy@gmail.com","phone":"4023213729"}}
+{"cart":{"id":"1234","items":[{"id":"4321","price":"10%","tax":null},{"id":"4321","price":"10%","tax":null}],"total":"150"},"cust":{"lastname":"Kandaswamy","firstname":"Bharath","email":"bharath.softy@gmail.com","phone":"4023213729"}}
