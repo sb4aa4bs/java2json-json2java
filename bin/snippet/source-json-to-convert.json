@@ -1,0 +1,7 @@
+{
+	"message": "Successfully Saved ALL the Customer Personal Information, Shipping, Billing , Credit Card(order table) and Cart Items(order_details table) information in to the commercedb database",
+	"error": 0,
+	"orderdetails": {
+		"orderid": 9
+	}
+}

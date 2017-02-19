@@ -10,6 +10,10 @@ public class Items {
 	public void setId(String id) {
 		this.id = id;
 	}
+	@Override
+	public String toString() {
+		return "Items [id=" + id + ", price=" + price + ", tax=" + tax + "]";
+	}
 	public String getPrice() {
 		return price;
 	}
